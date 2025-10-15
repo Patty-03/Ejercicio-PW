@@ -38,7 +38,7 @@ function addToList() {
         lastname.value = '';
         ci.value = '';
         newI.value = false;
-        alert('Estudiante agregado correctamente ✅');
+        alert('Estudiante agregado correctamente');
     } else {
         alert('Existen campos inválidos');
     }
