@@ -52,12 +52,12 @@ function addToList() {
             <label for="name">Nombre</label>
             <input type="text" name="name" id="name" v-model="name"
                 :class="{ 'is-invalid': name.length > 0 && !validations.name, 'is-valid': validations.name }">
-            <p v-if="name.length > 0 && !validations.name" class="error-message">Este campo es obligatorio</p>
+            <p v-if="name.length > 0 && !validations.name" class="error-message">Este campo es obligatorio y solo debe contener letras</p>
             
             <label for="lastname">Apellidos</label>
             <input type="text" name="lastname" id="lastname" v-model="lastname"
                 :class="{ 'is-invalid': lastname.length > 0 && !validations.lastname, 'is-valid': validations.lastname }">
-            <p v-if="lastname.length > 0 && !validations.lastname" class="error-message">Este campo es obligatorio</p>
+            <p v-if="lastname.length > 0 && !validations.lastname" class="error-message">Este campo es obligatorio y solo debe contener letras</p>
 
             <label for="ci">CI</label>
             <input type="text" name="ci" id="ci" v-model="ci"
